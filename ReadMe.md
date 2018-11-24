@@ -1,8 +1,8 @@
 # machePunkteTab
 
-Projektersteller: Manuel Scheiermann
-Das Projekt steht unter der Creative Commons Lizenz 4.0
-Siehe dazu: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de
+* Projektersteller: Manuel Scheiermann
+* Das Projekt steht unter der Creative Commons Lizenz 4.0
+* Siehe dazu: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de
 
 ## Beschreibung
 Dies ist ein Programm zur Erstellung einer Punktetabelle. In jedem Ordner in dem die Abgaben liegen, muss eine Datei korrektur.log liegen, welches Daten ueber das aktuelle Übungsblatt enthält. Dabei sollte sich korrektur.log an bestimmte Vorgaben halten. Bonuspunkte für das Uebungsblatt gibt es ab 50 Prozent der Gesamtpunktzahl.
