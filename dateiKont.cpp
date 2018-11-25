@@ -85,8 +85,14 @@ void DateiKont::erreichtePunkteErrechnen(Blatt& aktuellesBlatt){
 
 void DateiKont::alleKommentareAusgeben(){
     std::cout << "Kommentare werden in die korrektur.log geschrieben ..." << std::endl;
-    for(unsigned int i = 0; i < dateien.size(); i++) {
-        dateien[i]->kommentareAusgeben();
+    if(deckblatt != nullptr){
+        Datei* dblatt = new Datei("DECKBLATT" + deckblatt->getName(), deckblatt->getPfad());
+        dblatt->kommentareAusgeben();   // Deckblatt Kommentare ausgeben
+    }
+    
+    for(unsigned int i = 0; i < dateien.size(); i++) {      // Kommentare von den anderen Dateien ausgeben
+        if(dateien[i] != deckblatt)
+            dateien[i]->kommentareAusgeben();
     }
     std::cout << "Fertig. Kommentare in korrektur.log." << std::endl;
 }
