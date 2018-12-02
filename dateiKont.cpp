@@ -34,7 +34,8 @@ void DateiKont::verzeichnisAuslesen(std::string pfad, DIR *verzeichnis = nullptr
             datei_name.find(".h") != std::string::npos ||
             datei_name.find(".cpp") != std::string::npos ||
             datei_name.find(".hpp") != std::string::npos ||
-            datei_name.find("Makefile") != std::string::npos) {
+            datei_name.find("Makefile") != std::string::npos ||
+            datei_name.find("makefile") != std::string::npos) {
             
             Datei* dat = new Datei(datei->d_name, pfad);
             dateien.push_back(dat);
